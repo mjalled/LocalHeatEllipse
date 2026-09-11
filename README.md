@@ -94,3 +94,19 @@ nu_sr30_theta45 = predict_sr_theta_value(
 
 `predict_sr_theta_value(Re, angle_of_attack_deg, AR, theta_deg, complexity=18 or 30)`
 - Returns a single scalar prediction at one specified `theta`
+
+### Closed-form expressions
+
+In both expressions, $c = \cos(\theta)$ and $s = \sin(\theta)$ with $\theta$ in radians, and $\alpha$ is the angle of attack expressed in radians.
+
+**Complexity 18:**
+
+$$
+\mathrm{Nu} = 0.461 \sqrt{\mathrm{Re}} e^{0.277 c \left(\sqrt{\mathrm{AR}} c - \alpha + 3.19\right)}
+$$
+
+**Complexity 30:**
+
+$$
+\mathrm{Nu} = 0.397 \sqrt{\mathrm{Re}} \Big[ 0.193 \alpha e^{s} + e^{0.357 c \left( \left(2.08 - 1.81/\mathrm{AR}\right) c - \alpha + 2.96 \right)} \Big]
+$$
