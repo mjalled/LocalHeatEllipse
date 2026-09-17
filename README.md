@@ -16,7 +16,7 @@ The surrogate interfaces take these variables directly:
 - `angle_of_attack_deg`: angle of attack in degrees
 - `AR`: aspect ratio, defined as semi-major axis length divided by semi-minor axis length (a/b)
 
-The returned curves are ordered over the full azimuthal angle $\theta$ from `0` to `359` degrees, where $\theta = 0$ corresponds to the stagnation point, i.e., the point where the fluid first hits the cylinder (the smallest local coordinate). 
+The returned curves are ordered over the full azimuthal angle $\theta$ from `0` to `359` degrees, where $\theta = 0$ corresponds to the stagnation point, i.e., the point where the fluid first hits the cylinder (the surface point with the smallest coordinate in the flow direction). 
 
 ![sketck](images/ellipse_setup_schematic1.png)
 
