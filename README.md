@@ -18,7 +18,7 @@ The surrogate interfaces take these variables directly:
 
 The returned curves are ordered over the full azimuthal angle $\theta$ from `0` to `359` degrees, where $\theta = 0$ corresponds to the stagnation point, i.e., the point where the fluid first hits the cylinder (the smallest local coordinate). 
 
-![sketck](images/ellipse_setup_schematic.png)
+![sketck](images/ellipse_setup_schematic1.png)
 
 ## Recommended validity ranges
 
